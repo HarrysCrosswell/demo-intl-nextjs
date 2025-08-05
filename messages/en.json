@@ -8,7 +8,8 @@
   "home": {
     "title": "Welcome to Our Company",
     "subtitle": "We provide exceptional services and solutions to help your business grow and succeed in today's competitive market.",
-    "cta": "Get Started"
+    "cta": "Get Started",
+    "motto": "Code once, run everywhere"
   },
   "team": {
     "title": "Our Team",
