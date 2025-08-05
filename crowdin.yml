@@ -10,38 +10,5 @@ preserve_hierarchy: true
 commit_message: "New Crowdin updates"
 
 files:
-  # NextJS Frontend
-  - source: "/src/messages/en.json"
-    translation: "src/messages/%two_letters_code%.json"
-    languages_mapping: &anchor
-      two_letters_code:
-        es: "es"
-        fr: "fr"
-        ar: "ar"
-        pt: "pt"
-        cn: "cn"
-
-  # # Nuxt Frontend
-  # - source: "/front/multi-nuxt/locales/en.json"
-  #   translation: "/front/multi-nuxt/locales/%two_letters_code%.json"
-  #   languages_mapping: *anchor
-
-  # # FastAPI Backend
-  # - source: "/back/multi-fast-api/locales/en.json"
-  #   translation: "/back/multi-fast-api/locales/%two_letters_code%.json"
-  #   languages_mapping: *anchor
-
-  # # Spring Boot Backend
-  # - source: "/back/multi-spring/src/main/resources/messages.properties"
-  #   translation: "/back/multi-spring/src/main/resources/messages_%two_letters_code%.properties"
-  #   languages_mapping: *anchor
-
-  # # Future: Flutter
-  # - source: "/front/multi-flutter/lib/l10n/app_en.arb"
-  #   translation: "/front/multi-flutter/lib/l10n/app_%two_letters_code%.arb"
-  #   languages_mapping: *anchor
-
-  # # Future: Laravel
-  # - source: "/back/multi-laravel/lang/en.json"
-  #   translation: "/back/multi-laravel/lang/%two_letters_code%.json"
-  #   languages_mapping: *anchor
+  - source: /src/messages/en.json
+    translation: src/messages/%two_letters_code%.json
