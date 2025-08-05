@@ -1,0 +1,52 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "team": "Notre Équipe",
+    "pricing": "Tarifs",
+    "contacts": "Contact"
+  },
+  "home": {
+    "title": "Bienvenue dans Notre Entreprise",
+    "subtitle": "Nous fournissons des services et solutions exceptionnels pour aider votre entreprise à croître et réussir dans le marché concurrentiel d'aujourd'hui.",
+    "cta": "Commencer"
+  },
+  "team": {
+    "title": "Notre Équipe",
+    "ceo": "PDG et Fondateur",
+    "cto": "Directeur Technique",
+    "lead": "Développeur Principal"
+  },
+  "pricing": {
+    "title": "Plans Tarifaires",
+    "basic": "Basique",
+    "pro": "Pro",
+    "enterprise": "Entreprise",
+    "month": "/mois",
+    "choose": "Choisir le Plan",
+    "features": {
+      "projects": "{count} Projets",
+      "basicSupport": "Support Basique",
+      "prioritySupport": "Support Prioritaire",
+      "support247": "Support 24/7",
+      "storage": "{amount} de Stockage",
+      "advanced": "Fonctionnalités Avancées",
+      "unlimited": "Projets Illimités",
+      "custom": "Intégration Personnalisée"
+    }
+  },
+  "contact": {
+    "title": "Nous Contacter",
+    "email": "Email",
+    "message": "Message",
+    "send": "Envoyer",
+    "success": "Message envoyé avec succès!",
+    "emailPlaceholder": "votre@email.com",
+    "messagePlaceholder": "Votre message ici..."
+  },
+  "footer": {
+    "description": "Construire des expériences numériques exceptionnelles pour les entreprises du monde entier.",
+    "quickLinks": "Liens Rapides",
+    "followUs": "Nous Suivre",
+    "copyright": "© 2024 Votre Nom d'Entreprise. Tous droits réservés."
+  }
+}

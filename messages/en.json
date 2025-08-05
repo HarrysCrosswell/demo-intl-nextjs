@@ -1,0 +1,52 @@
+{
+  "navigation": {
+    "home": "Home",
+    "team": "Our Team",
+    "pricing": "Pricing",
+    "contacts": "Contacts"
+  },
+  "home": {
+    "title": "Welcome to Our Company",
+    "subtitle": "We provide exceptional services and solutions to help your business grow and succeed in today's competitive market.",
+    "cta": "Get Started"
+  },
+  "team": {
+    "title": "Our Team",
+    "ceo": "CEO & Founder",
+    "cto": "CTO",
+    "lead": "Lead Developer"
+  },
+  "pricing": {
+    "title": "Pricing Plans",
+    "basic": "Basic",
+    "pro": "Pro",
+    "enterprise": "Enterprise",
+    "month": "/month",
+    "choose": "Choose Plan",
+    "features": {
+      "projects": "{count} Projects",
+      "basicSupport": "Basic Support",
+      "prioritySupport": "Priority Support",
+      "support247": "24/7 Support",
+      "storage": "{amount} Storage",
+      "advanced": "Advanced Features",
+      "unlimited": "Unlimited Projects",
+      "custom": "Custom Integration"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "success": "Message sent successfully!",
+    "emailPlaceholder": "your@email.com",
+    "messagePlaceholder": "Your message here..."
+  },
+  "footer": {
+    "description": "Building exceptional digital experiences for businesses worldwide.",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "copyright": "© 2024 Your Company Name. All rights reserved."
+  }
+}

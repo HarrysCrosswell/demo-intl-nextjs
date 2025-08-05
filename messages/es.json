@@ -1,0 +1,52 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "team": "Nuestro Equipo",
+    "pricing": "Precios",
+    "contacts": "Contacto"
+  },
+  "home": {
+    "title": "Bienvenido a Nuestra Empresa",
+    "subtitle": "Proporcionamos servicios y soluciones excepcionales para ayudar a su negocio a crecer y tener éxito en el mercado competitivo de hoy.",
+    "cta": "Comenzar"
+  },
+  "team": {
+    "title": "Nuestro Equipo",
+    "ceo": "CEO y Fundador",
+    "cto": "Director Técnico",
+    "lead": "Desarrollador Principal"
+  },
+  "pricing": {
+    "title": "Planes de Precios",
+    "basic": "Básico",
+    "pro": "Pro",
+    "enterprise": "Empresarial",
+    "month": "/mes",
+    "choose": "Elegir Plan",
+    "features": {
+      "projects": "{count} Proyectos",
+      "basicSupport": "Soporte Básico",
+      "prioritySupport": "Soporte Prioritario",
+      "support247": "Soporte 24/7",
+      "storage": "{amount} de Almacenamiento",
+      "advanced": "Características Avanzadas",
+      "unlimited": "Proyectos Ilimitados",
+      "custom": "Integración Personalizada"
+    }
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "email": "Email",
+    "message": "Mensaje",
+    "send": "Enviar",
+    "success": "¡Mensaje enviado exitosamente!",
+    "emailPlaceholder": "tu@email.com",
+    "messagePlaceholder": "Tu mensaje aquí..."
+  },
+  "footer": {
+    "description": "Construyendo experiencias digitales excepcionales para empresas en todo el mundo.",
+    "quickLinks": "Enlaces Rápidos",
+    "followUs": "Síguenos",
+    "copyright": "© 2024 Nombre de Tu Empresa. Todos los derechos reservados."
+  }
+}
