@@ -1,53 +1,53 @@
 {
   "navigation": {
-    "home": "Home",
-    "team": "Our Team",
-    "pricing": "Pricing",
-    "contacts": "Contacts"
+    "home": "首页",
+    "team": "我们的团队",
+    "pricing": "定价",
+    "contacts": "联系人"
   },
   "home": {
-    "title": "Welcome to Our Company",
-    "subtitle": "We provide exceptional services and solutions to help your business grow and succeed in today's competitive market.",
-    "cta": "Get Started",
-    "motto": "Code once, run everywhere"
+    "title": "欢迎来到我们的公司",
+    "subtitle": "我们提供不同寻常的服务和解决办法，帮助您的企业在当今竞争性市场上成长并取得成功。",
+    "cta": "开始",
+    "motto": "代码一次，随时随地运行"
   },
   "team": {
-    "title": "Our Team",
-    "ceo": "CEO & Founder",
+    "title": "我们的团队",
+    "ceo": "首席执行官和创始人",
     "cto": "CTO",
-    "lead": "Lead Developer"
+    "lead": "领先开发者"
   },
   "pricing": {
-    "title": "Pricing Plans",
-    "basic": "Basic",
+    "title": "定价计划",
+    "basic": "基本的",
     "pro": "Pro",
-    "enterprise": "Enterprise",
-    "month": "/month",
-    "choose": "Choose Plan",
+    "enterprise": "企业",
+    "month": "/月",
+    "choose": "选择计划",
     "features": {
       "projects": "{count} Projects",
-      "basicSupport": "Basic Support",
-      "prioritySupport": "Priority Support",
-      "support247": "24/7 Support",
+      "basicSupport": "基本支持",
+      "prioritySupport": "优先级支持",
+      "support247": "24/7 支持",
       "storage": "{amount} Storage",
-      "advanced": "Advanced Features",
-      "unlimited": "Unlimited Projects",
-      "custom": "Custom Integration"
+      "advanced": "高级功能",
+      "unlimited": "无限项目",
+      "custom": "自定义集成"
     }
   },
   "contact": {
-    "title": "Contact Us",
-    "email": "Email",
-    "message": "Message",
-    "send": "Send",
-    "success": "Message sent successfully!",
-    "emailPlaceholder": "your@email.com",
-    "messagePlaceholder": "Your message here..."
+    "title": "联系我们",
+    "email": "电子邮件地址",
+    "message": "留言",
+    "send": "发送",
+    "success": "消息发送成功！",
+    "emailPlaceholder": "您的 @email.com",
+    "messagePlaceholder": "您在这里的消息..."
   },
   "footer": {
-    "description": "Building exceptional digital experiences for businesses worldwide.",
-    "quickLinks": "Quick Links",
-    "followUs": "Follow Us",
-    "copyright": "© 2024 Your Company Name. All rights reserved."
+    "description": "为世界各地的企业积累特殊的数字经验。",
+    "quickLinks": "快速链接",
+    "followUs": "关注我们",
+    "copyright": "©️ 2024 您的公司名称。版权所有。"
   }
 }
