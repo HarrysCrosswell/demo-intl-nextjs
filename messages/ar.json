@@ -1,53 +1,53 @@
 {
   "navigation": {
-    "home": "Home",
-    "team": "Our Team",
-    "pricing": "Pricing",
-    "contacts": "Contacts"
+    "home": "المنزل",
+    "team": "فريقنا",
+    "pricing": "التسعير",
+    "contacts": "جهات"
   },
   "home": {
-    "title": "Welcome to Our Company",
-    "subtitle": "We provide exceptional services and solutions to help your business grow and succeed in today's competitive market.",
-    "cta": "Get Started",
-    "motto": "Code once, run everywhere"
+    "title": "مرحبا بكم في شركتنا",
+    "subtitle": "نحن نقدم خدمات وحلول استثنائية لمساعدة عملك التجاري على النمو والنجاح في السوق التنافسية اليوم.",
+    "cta": "ابدأ",
+    "motto": "البرمجة مرة واحدة، تشغيل في كل مكان"
   },
   "team": {
-    "title": "Our Team",
-    "ceo": "CEO & Founder",
+    "title": "فريقنا",
+    "ceo": "المدير التنفيذي والمؤسس",
     "cto": "CTO",
-    "lead": "Lead Developer"
+    "lead": "المطور الرئيسي"
   },
   "pricing": {
-    "title": "Pricing Plans",
-    "basic": "Basic",
+    "title": "خطط الأسعار",
+    "basic": "اساسي",
     "pro": "Pro",
-    "enterprise": "Enterprise",
-    "month": "/month",
-    "choose": "Choose Plan",
+    "enterprise": "المؤسسة",
+    "month": "/ شهر",
+    "choose": "اختر خطة",
     "features": {
-      "projects": "{count} Projects",
-      "basicSupport": "Basic Support",
-      "prioritySupport": "Priority Support",
-      "support247": "24/7 Support",
-      "storage": "{amount} Storage",
-      "advanced": "Advanced Features",
-      "unlimited": "Unlimited Projects",
-      "custom": "Custom Integration"
+      "projects": "مشاريع {count}",
+      "basicSupport": "الدعم الأساسي",
+      "prioritySupport": "الدعم ذو الأولوية",
+      "support247": "24/7 الدعم",
+      "storage": "تخزين {amount}",
+      "advanced": "الميزات المتقدمة",
+      "unlimited": "مشاريع غير محدودة",
+      "custom": "تكامل مخصص"
     }
   },
   "contact": {
-    "title": "Contact Us",
-    "email": "Email",
-    "message": "Message",
-    "send": "Send",
-    "success": "Message sent successfully!",
-    "emailPlaceholder": "your@email.com",
-    "messagePlaceholder": "Your message here..."
+    "title": "اتصل بنا",
+    "email": "البريد الإلكتروني",
+    "message": "رسالة",
+    "send": "إرسال",
+    "success": "تم إرسال الرسالة بنجاح!",
+    "emailPlaceholder": "خاصتك @email.com",
+    "messagePlaceholder": "رسالتك هنا..."
   },
   "footer": {
-    "description": "Building exceptional digital experiences for businesses worldwide.",
-    "quickLinks": "Quick Links",
-    "followUs": "Follow Us",
-    "copyright": "© 2024 Your Company Name. All rights reserved."
+    "description": "بناء تجارب رقمية استثنائية للأعمال التجارية في جميع أنحاء العالم.",
+    "quickLinks": "روابط سريعة",
+    "followUs": "تابعنا",
+    "copyright": "©️ 2024 اسم شركتك. جميع الحقوق محفوظة."
   }
 }
