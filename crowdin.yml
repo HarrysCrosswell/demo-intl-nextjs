@@ -1,14 +1,9 @@
-# Crowdin configuration file
-project_id: "816438"
-api_token: "70f3fc562820d334fd7329abede970c98148dced4ed61a82866cee38b5a08271c282564c01f501ec"
-# api_token_env: "70f3fc562820d334fd7329abede970c98148dced4ed61a82866cee38b5a08271c282564c01f501ec"
-# api_token_env: "CROWDIN_PERSONAL_TOKEN"
-base_path: "."
-base_url: "https://api.crowdin.com"
-
-preserve_hierarchy: true
-commit_message: "New Crowdin updates"
-
+project_id: '816438'
+api_token: 70f3fc562820d334fd7329abede970c98148dced4ed61a82866cee38b5a08271c282564c01f501ec
+base_path: .
+base_url: 'https://api.crowdin.com'
+preserve_hierarchy: 1
+commit_message: New Crowdin updates
 files:
-  - source: /src/messages/en.json
-    translation: src/messages/%two_letters_code%.json
+  - source: /messages/en.json
+    translation: /messages/%two_letters_code%.json
