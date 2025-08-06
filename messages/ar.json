@@ -1,52 +1,53 @@
 {
   "navigation": {
-    "home": "الرئيسية",
-    "team": "فريقنا",
-    "pricing": "الأسعار",
-    "contacts": "اتصل بنا"
+    "home": "Home",
+    "team": "Our Team",
+    "pricing": "Pricing",
+    "contacts": "Contacts"
   },
   "home": {
-    "title": "مرحباً بكم في شركتنا",
-    "subtitle": "نحن نقدم خدمات وحلول استثنائية لمساعدة عملكم على النمو والنجاح في السوق التنافسي اليوم.",
-    "cta": "ابدأ الآن"
+    "title": "Welcome to Our Company",
+    "subtitle": "We provide exceptional services and solutions to help your business grow and succeed in today's competitive market.",
+    "cta": "Get Started",
+    "motto": "Code once, run everywhere"
   },
   "team": {
-    "title": "فريقنا",
-    "ceo": "الرئيس التنفيذي والمؤسس",
-    "cto": "المدير التقني",
-    "lead": "المطور الرئيسي"
+    "title": "Our Team",
+    "ceo": "CEO & Founder",
+    "cto": "CTO",
+    "lead": "Lead Developer"
   },
   "pricing": {
-    "title": "خطط الأسعار",
-    "basic": "أساسي",
-    "pro": "احترافي",
-    "enterprise": "مؤسسي",
-    "month": "/شهر",
-    "choose": "اختر الخطة",
+    "title": "Pricing Plans",
+    "basic": "Basic",
+    "pro": "Pro",
+    "enterprise": "Enterprise",
+    "month": "/month",
+    "choose": "Choose Plan",
     "features": {
-      "projects": "{count} مشاريع",
-      "basicSupport": "دعم أساسي",
-      "prioritySupport": "دعم ذو أولوية",
-      "support247": "دعم 24/7",
-      "storage": "{amount} تخزين",
-      "advanced": "ميزات متقدمة",
-      "unlimited": "مشاريع غير محدودة",
-      "custom": "تكامل مخصص"
+      "projects": "{count} Projects",
+      "basicSupport": "Basic Support",
+      "prioritySupport": "Priority Support",
+      "support247": "24/7 Support",
+      "storage": "{amount} Storage",
+      "advanced": "Advanced Features",
+      "unlimited": "Unlimited Projects",
+      "custom": "Custom Integration"
     }
   },
   "contact": {
-    "title": "اتصل بنا",
-    "email": "البريد الإلكتروني",
-    "message": "الرسالة",
-    "send": "إرسال",
-    "success": "تم إرسال الرسالة بنجاح!",
-    "emailPlaceholder": "email@example.com",
-    "messagePlaceholder": "رسالتك هنا..."
+    "title": "Contact Us",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "success": "Message sent successfully!",
+    "emailPlaceholder": "your@email.com",
+    "messagePlaceholder": "Your message here..."
   },
   "footer": {
-    "description": "بناء تجارب رقمية استثنائية للشركات في جميع أنحاء العالم.",
-    "quickLinks": "روابط سريعة",
-    "followUs": "تابعنا",
-    "copyright": "© 2024 اسم شركتكم. جميع الحقوق محفوظة."
+    "description": "Building exceptional digital experiences for businesses worldwide.",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "copyright": "© 2024 Your Company Name. All rights reserved."
   }
 }
