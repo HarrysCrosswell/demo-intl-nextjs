@@ -1,53 +1,53 @@
 {
   "navigation": {
-    "home": "Home",
-    "team": "Our Team",
-    "pricing": "Pricing",
-    "contacts": "Contacts"
+    "home": "Inicio",
+    "team": "Nuestro equipo",
+    "pricing": "Precios",
+    "contacts": "Contactos"
   },
   "home": {
-    "title": "Welcome to Our Company",
-    "subtitle": "We provide exceptional services and solutions to help your business grow and succeed in today's competitive market.",
-    "cta": "Get Started",
-    "motto": "Code once, run everywhere"
+    "title": "Bienvenido a nuestra empresa",
+    "subtitle": "Proporcionamos servicios y soluciones excepcionales para ayudar a su negocio a crecer y tener éxito en el mercado competitivo de hoy.",
+    "cta": "Empezar",
+    "motto": "Código una vez, ejecute en todas partes"
   },
   "team": {
-    "title": "Our Team",
-    "ceo": "CEO & Founder",
+    "title": "Nuestro equipo",
+    "ceo": "CEO & Fundador",
     "cto": "CTO",
-    "lead": "Lead Developer"
+    "lead": "Desarrollador jefe"
   },
   "pricing": {
-    "title": "Pricing Plans",
-    "basic": "Basic",
+    "title": "Planes de precios",
+    "basic": "Básico",
     "pro": "Pro",
-    "enterprise": "Enterprise",
-    "month": "/month",
-    "choose": "Choose Plan",
+    "enterprise": "Empresa",
+    "month": "/mes",
+    "choose": "Elegir plan",
     "features": {
-      "projects": "{count} Projects",
-      "basicSupport": "Basic Support",
-      "prioritySupport": "Priority Support",
-      "support247": "24/7 Support",
-      "storage": "{amount} Storage",
-      "advanced": "Advanced Features",
-      "unlimited": "Unlimited Projects",
-      "custom": "Custom Integration"
+      "projects": "Proyectos {count}",
+      "basicSupport": "Soporte básico",
+      "prioritySupport": "Soporte prioritario",
+      "support247": "Soporte 24/7",
+      "storage": "Almacenamiento {amount}",
+      "advanced": "Características avanzadas",
+      "unlimited": "Proyectos ilimitados",
+      "custom": "Integración personalizada"
     }
   },
   "contact": {
-    "title": "Contact Us",
-    "email": "Email",
-    "message": "Message",
-    "send": "Send",
-    "success": "Message sent successfully!",
-    "emailPlaceholder": "your@email.com",
-    "messagePlaceholder": "Your message here..."
+    "title": "Contáctenos",
+    "email": "E-mail",
+    "message": "Mensaje",
+    "send": "Enviar",
+    "success": "¡Mensaje enviado con éxito!",
+    "emailPlaceholder": "tu@email.com",
+    "messagePlaceholder": "Su mensaje aquí..."
   },
   "footer": {
-    "description": "Building exceptional digital experiences for businesses worldwide.",
-    "quickLinks": "Quick Links",
-    "followUs": "Follow Us",
-    "copyright": "© 2024 Your Company Name. All rights reserved."
+    "description": "Construir experiencias digitales excepcionales para empresas de todo el mundo.",
+    "quickLinks": "Enlaces rápidos",
+    "followUs": "Síguenos",
+    "copyright": "©️ 2024 Su nombre de empresa. Todos los derechos reservados."
   }
 }
