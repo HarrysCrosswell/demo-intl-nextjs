@@ -1,14 +1,10 @@
-import { getRequestConfig } from "next-intl/server";
-import { notFound } from "next/navigation";
+const locales = [
+  { code: "en", name: "English", flag: "🇺🇸" },
+  { code: "fr", name: "Français", flag: "🇫🇷" },
+  { code: "es", name: "Español", flag: "🇪🇸" },
+  { code: "ar", name: "العربية", flag: "🇸🇦" },
+  { code: "pt", name: "Português", flag: "🇵🇹" },
+  { code: "zh", name: "中文", flag: "🇨🇳" },
+];
 
-// Can be imported from a shared config
-const locales = ["en", "fr", "es", "ar"];
-
-export default getRequestConfig(async ({ locale }) => {
-  // Validate that the incoming `locale` parameter is valid
-  if (!locales.includes(locale as any)) notFound();
-
-  return {
-    messages: (await import(`./messages/${locale}.json`)).default,
-  };
-});
+export default locales;

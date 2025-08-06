@@ -3,13 +3,9 @@
 import { useState, useRef, useEffect } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import { useLocale } from "next-intl";
+import locales from "../i18n";
 
-const languages = [
-  { code: "en", name: "English", flag: "🇺🇸" },
-  { code: "fr", name: "Français", flag: "🇫🇷" },
-  { code: "es", name: "Español", flag: "🇪🇸" },
-  { code: "ar", name: "العربية", flag: "🇸🇦" },
-];
+const languages = locales;
 
 export default function LanguageSwitcher() {
   const [isOpen, setIsOpen] = useState(false);
