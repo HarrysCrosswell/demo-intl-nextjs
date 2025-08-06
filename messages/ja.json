@@ -1,0 +1,55 @@
+{
+  "navigation": {
+    "home": "ホーム",
+    "team": "私たちのチーム",
+    "pricing": "価格",
+    "contacts": "連絡先"
+  },
+  "home": {
+    "title": "当社へようこそ",
+    "subtitle": "当社は、お客様のビジネスが今日の競争市場で成長し、成功するのを助ける優れたサービスとソリューションを提供します。",
+    "cta": "はじめよう",
+    "motto": "コードが一度、どこでも実行されます",
+    "testimonies": "いくつかの証言...",
+    "partners": "私たちのパートナー..."
+  },
+  "team": {
+    "title": "私たちのチーム",
+    "ceo": "CEO & ファウンダー",
+    "cto": "最高技術責任者",
+    "lead": "リード開発者"
+  },
+  "pricing": {
+    "title": "料金プラン",
+    "basic": "基本",
+    "pro": "プロ",
+    "enterprise": "エンタープライズ",
+    "month": "/月",
+    "choose": "プランを選択",
+    "features": {
+      "projects": "{count} プロジェクト",
+      "basicSupport": "基本的なサポート",
+      "prioritySupport": "優先サポート",
+      "support247": "24/7 サポート",
+      "storage": "{amount} ストレージ",
+      "advanced": "高度な機能",
+      "unlimited": "無制限のプロジェクト",
+      "custom": "カスタム統合"
+    }
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "email": "Eメールアドレス",
+    "message": "メッセージ",
+    "send": "送信",
+    "success": "メッセージの送信に成功しました！",
+    "emailPlaceholder": "your@email.com",
+    "messagePlaceholder": "メッセージはこちら..."
+  },
+  "footer": {
+    "description": "世界中の企業のための優れたデジタル体験を構築します。",
+    "quickLinks": "クイックリンク",
+    "followUs": "フォローしてください",
+    "copyright": "©️ 2024 Your Company Name. All rights reserved."
+  }
+}

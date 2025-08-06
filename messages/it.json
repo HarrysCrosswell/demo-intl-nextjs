@@ -1,0 +1,55 @@
+{
+  "navigation": {
+    "home": "Indietro",
+    "team": "Il Nostro Team",
+    "pricing": "Prezzi",
+    "contacts": "Contatti"
+  },
+  "home": {
+    "title": "Benvenuto nella nostra azienda",
+    "subtitle": "Forniamo servizi e soluzioni eccezionali per aiutare la vostra azienda a crescere e a avere successo nel mercato competitivo di oggi.",
+    "cta": "Per Iniziare",
+    "motto": "Codice una volta, esegui ovunque",
+    "testimonies": "Alcune testimonianze...",
+    "partners": "I nostri partner..."
+  },
+  "team": {
+    "title": "Il Nostro Team",
+    "ceo": "Amministratore Delegato E Fondatore",
+    "cto": "CTO",
+    "lead": "Sviluppatore Principale"
+  },
+  "pricing": {
+    "title": "Piani Prezzi",
+    "basic": "Base",
+    "pro": "Pro",
+    "enterprise": "Impresa",
+    "month": "/mese",
+    "choose": "Scegli Un Piano",
+    "features": {
+      "projects": "Progetti {count}",
+      "basicSupport": "Supporto Di Base",
+      "prioritySupport": "Supporto Prioritario",
+      "support247": "Assistenza 24/7",
+      "storage": "Archiviazione {amount}",
+      "advanced": "Funzionalità Avanzate",
+      "unlimited": "Progetti Illimitati",
+      "custom": "Integrazione Personalizzata"
+    }
+  },
+  "contact": {
+    "title": "Contattaci",
+    "email": "Email",
+    "message": "Messaggio",
+    "send": "Invia",
+    "success": "Messaggio inviato con successo!",
+    "emailPlaceholder": "your@email.com",
+    "messagePlaceholder": "Il tuo messaggio qui..."
+  },
+  "footer": {
+    "description": "Costruire esperienze digitali eccezionali per le imprese in tutto il mondo.",
+    "quickLinks": "Collegamenti Rapidi",
+    "followUs": "Seguici Su",
+    "copyright": "©️ 2024 Nome aziendale. Tutti i diritti riservati."
+  }
+}

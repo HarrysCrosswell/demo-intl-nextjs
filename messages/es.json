@@ -9,7 +9,9 @@
     "title": "Bienvenido a nuestra empresa",
     "subtitle": "Proporcionamos servicios y soluciones excepcionales para ayudar a su negocio a crecer y tener éxito en el mercado competitivo de hoy.",
     "cta": "Empezar",
-    "motto": "Código una vez, ejecute en todas partes"
+    "motto": "Código una vez, ejecute en todas partes",
+    "testimonies": "Algunos testimonios...",
+    "partners": "Nuestros socios..."
   },
   "team": {
     "title": "Nuestro equipo",

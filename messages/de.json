@@ -1,0 +1,55 @@
+{
+  "navigation": {
+    "home": "Zurück",
+    "team": "Unser Team",
+    "pricing": "Preisgestaltung",
+    "contacts": "Kontakte"
+  },
+  "home": {
+    "title": "Willkommen bei unserem Unternehmen",
+    "subtitle": "Wir bieten Ihnen außergewöhnliche Dienstleistungen und Lösungen, um Ihr Unternehmen wachsen zu lassen und auf dem heutigen Wettbewerbsmarkt erfolgreich zu sein.",
+    "cta": "Los geht's",
+    "motto": "Code einmal, überall laufen",
+    "testimonies": "Einige Zeugnisse...",
+    "partners": "Unsere Partner..."
+  },
+  "team": {
+    "title": "Unser Team",
+    "ceo": "CEO und Gründer",
+    "cto": "Technischer Leiter",
+    "lead": "Leitender Entwickler"
+  },
+  "pricing": {
+    "title": "Lernpaket auswählen",
+    "basic": "Einfach",
+    "pro": "Pro",
+    "enterprise": "Unternehmen",
+    "month": "/Monat",
+    "choose": "Plan auswählen",
+    "features": {
+      "projects": "{count} Projekte",
+      "basicSupport": "Einfacher Support",
+      "prioritySupport": "Vorrangiger Support",
+      "support247": "24/7 Support",
+      "storage": "{amount} Speicher",
+      "advanced": "Erweiterte Funktionen",
+      "unlimited": "Unbegrenzte Projekte",
+      "custom": "Benutzerdefinierte Integration"
+    }
+  },
+  "contact": {
+    "title": "Kontaktiere uns",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "send": "Senden",
+    "success": "Nachricht erfolgreich gesendet!",
+    "emailPlaceholder": "deine@email.com",
+    "messagePlaceholder": "Ihre Nachricht hier..."
+  },
+  "footer": {
+    "description": "Aufbau außergewöhnlicher digitaler Erfahrungen für Unternehmen weltweit.",
+    "quickLinks": "Schnelllinks",
+    "followUs": "Folgen Sie uns",
+    "copyright": "©️ 2024 Ihr Firmenname. Alle Rechte vorbehalten."
+  }
+}
