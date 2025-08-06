@@ -1,6 +1,6 @@
 {
   "navigation": {
-    "home": "Domicile",
+    "home": "Accueil",
     "team": "Notre équipe",
     "pricing": "Tarification",
     "contacts": "Contacts"
@@ -9,7 +9,9 @@
     "title": "Bienvenue dans notre entreprise",
     "subtitle": "Nous offrons des services et des solutions exceptionnels pour aider votre entreprise à se développer et à réussir sur le marché concurrentiel d'aujourd'hui.",
     "cta": "Commencer",
-    "motto": "Code une fois, exécuter partout"
+    "motto": "Code une fois, exécuter partout",
+    "testimonies": "Quelques témoignages...",
+    "partners": "Nos partenaires..."
   },
   "team": {
     "title": "Notre équipe",
