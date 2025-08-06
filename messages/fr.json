@@ -1,52 +1,53 @@
 {
   "navigation": {
-    "home": "Accueil",
-    "team": "Notre Équipe",
-    "pricing": "Tarifs",
-    "contacts": "Contact"
+    "home": "Domicile",
+    "team": "Notre équipe",
+    "pricing": "Tarification",
+    "contacts": "Contacts"
   },
   "home": {
-    "title": "Bienvenue dans Notre Entreprise",
-    "subtitle": "Nous fournissons des services et solutions exceptionnels pour aider votre entreprise à croître et réussir dans le marché concurrentiel d'aujourd'hui.",
-    "cta": "Commencer"
+    "title": "Bienvenue dans notre entreprise",
+    "subtitle": "Nous offrons des services et des solutions exceptionnels pour aider votre entreprise à se développer et à réussir sur le marché concurrentiel d'aujourd'hui.",
+    "cta": "Commencer",
+    "motto": "Code une fois, exécuter partout"
   },
   "team": {
-    "title": "Notre Équipe",
+    "title": "Notre équipe",
     "ceo": "PDG et Fondateur",
-    "cto": "Directeur Technique",
-    "lead": "Développeur Principal"
+    "cto": "CTO",
+    "lead": "Développeur principal"
   },
   "pricing": {
-    "title": "Plans Tarifaires",
+    "title": "Forfaits tarifaires",
     "basic": "Basique",
     "pro": "Pro",
     "enterprise": "Entreprise",
     "month": "/mois",
-    "choose": "Choisir le Plan",
+    "choose": "Choisir un plan",
     "features": {
-      "projects": "{count} Projets",
-      "basicSupport": "Support Basique",
-      "prioritySupport": "Support Prioritaire",
+      "projects": "Projets {count}",
+      "basicSupport": "Support de base",
+      "prioritySupport": "Support prioritaire",
       "support247": "Support 24/7",
-      "storage": "{amount} de Stockage",
+      "storage": "{amount} De stockage",
       "advanced": "Fonctionnalités Avancées",
-      "unlimited": "Projets Illimités",
-      "custom": "Intégration Personnalisée"
+      "unlimited": "Projets illimités",
+      "custom": "Intégration personnalisée"
     }
   },
   "contact": {
-    "title": "Nous Contacter",
-    "email": "Email",
+    "title": "Contactez-nous",
+    "email": "Courriel",
     "message": "Message",
     "send": "Envoyer",
-    "success": "Message envoyé avec succès!",
+    "success": "Message envoyé avec succès !",
     "emailPlaceholder": "votre@email.com",
     "messagePlaceholder": "Votre message ici..."
   },
   "footer": {
-    "description": "Construire des expériences numériques exceptionnelles pour les entreprises du monde entier.",
-    "quickLinks": "Liens Rapides",
-    "followUs": "Nous Suivre",
-    "copyright": "© 2024 Votre Nom d'Entreprise. Tous droits réservés."
+    "description": "Établir des expériences numériques exceptionnelles pour les entreprises du monde entier.",
+    "quickLinks": "Liens rapides",
+    "followUs": "Suivez-nous",
+    "copyright": "©️ 2024 Nom de votre société. Tous droits réservés."
   }
 }

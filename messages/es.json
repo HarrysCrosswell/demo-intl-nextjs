@@ -1,52 +1,53 @@
 {
   "navigation": {
     "home": "Inicio",
-    "team": "Nuestro Equipo",
+    "team": "Nuestro equipo",
     "pricing": "Precios",
-    "contacts": "Contacto"
+    "contacts": "Contactos"
   },
   "home": {
-    "title": "Bienvenido a Nuestra Empresa",
+    "title": "Bienvenido a nuestra empresa",
     "subtitle": "Proporcionamos servicios y soluciones excepcionales para ayudar a su negocio a crecer y tener éxito en el mercado competitivo de hoy.",
-    "cta": "Comenzar"
+    "cta": "Empezar",
+    "motto": "Código una vez, ejecute en todas partes"
   },
   "team": {
-    "title": "Nuestro Equipo",
-    "ceo": "CEO y Fundador",
-    "cto": "Director Técnico",
-    "lead": "Desarrollador Principal"
+    "title": "Nuestro equipo",
+    "ceo": "CEO & Fundador",
+    "cto": "CTO",
+    "lead": "Desarrollador jefe"
   },
   "pricing": {
-    "title": "Planes de Precios",
+    "title": "Planes de precios",
     "basic": "Básico",
     "pro": "Pro",
-    "enterprise": "Empresarial",
+    "enterprise": "Empresa",
     "month": "/mes",
-    "choose": "Elegir Plan",
+    "choose": "Elegir plan",
     "features": {
-      "projects": "{count} Proyectos",
-      "basicSupport": "Soporte Básico",
-      "prioritySupport": "Soporte Prioritario",
+      "projects": "Proyectos {count}",
+      "basicSupport": "Soporte básico",
+      "prioritySupport": "Soporte prioritario",
       "support247": "Soporte 24/7",
-      "storage": "{amount} de Almacenamiento",
-      "advanced": "Características Avanzadas",
-      "unlimited": "Proyectos Ilimitados",
-      "custom": "Integración Personalizada"
+      "storage": "Almacenamiento {amount}",
+      "advanced": "Características avanzadas",
+      "unlimited": "Proyectos ilimitados",
+      "custom": "Integración personalizada"
     }
   },
   "contact": {
-    "title": "Contáctanos",
-    "email": "Email",
+    "title": "Contáctenos",
+    "email": "E-mail",
     "message": "Mensaje",
     "send": "Enviar",
-    "success": "¡Mensaje enviado exitosamente!",
+    "success": "¡Mensaje enviado con éxito!",
     "emailPlaceholder": "tu@email.com",
-    "messagePlaceholder": "Tu mensaje aquí..."
+    "messagePlaceholder": "Su mensaje aquí..."
   },
   "footer": {
-    "description": "Construyendo experiencias digitales excepcionales para empresas en todo el mundo.",
-    "quickLinks": "Enlaces Rápidos",
+    "description": "Construir experiencias digitales excepcionales para empresas de todo el mundo.",
+    "quickLinks": "Enlaces rápidos",
     "followUs": "Síguenos",
-    "copyright": "© 2024 Nombre de Tu Empresa. Todos los derechos reservados."
+    "copyright": "©️ 2024 Su nombre de empresa. Todos los derechos reservados."
   }
 }

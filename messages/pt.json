@@ -1,0 +1,53 @@
+{
+  "navigation": {
+    "home": "Residencial",
+    "team": "Nossa equipe",
+    "pricing": "Preços",
+    "contacts": "CONTATOS"
+  },
+  "home": {
+    "title": "Seja bem-vindo à nossa empresa",
+    "subtitle": "Nós fornecemos serviços e soluções excepcionais para ajudar seu negócio a crescer e ter sucesso no mercado competitivo de hoje.",
+    "cta": "Comece Agora",
+    "motto": "Codificar uma vez, executado em todos os lugares"
+  },
+  "team": {
+    "title": "Nossa equipe",
+    "ceo": "CEO & Fundador",
+    "cto": "CTO",
+    "lead": "Desenvolvedor chefe"
+  },
+  "pricing": {
+    "title": "Planos de preços",
+    "basic": "Básico",
+    "pro": "Pro",
+    "enterprise": "Empresa",
+    "month": "/mês",
+    "choose": "Escolher plano",
+    "features": {
+      "projects": "Projetos {count}",
+      "basicSupport": "Suporte básico",
+      "prioritySupport": "Suporte Prioritário",
+      "support247": "Suporte 24/7",
+      "storage": "Armazenamento {amount}",
+      "advanced": "Recursos Avançados",
+      "unlimited": "Projetos Ilimitados",
+      "custom": "Integração personalizada"
+    }
+  },
+  "contact": {
+    "title": "Entre em contato",
+    "email": "e-mail",
+    "message": "mensagem",
+    "send": "Mandar",
+    "success": "Mensagem enviada com sucesso!",
+    "emailPlaceholder": "seu@email.com",
+    "messagePlaceholder": "Sua mensagem aqui..."
+  },
+  "footer": {
+    "description": "Construindo experiências digitais excepcionais para empresas em todo o mundo.",
+    "quickLinks": "Links rápidos",
+    "followUs": "Siga-nos",
+    "copyright": "©️ 2024 Seu Nome da Empresa. Todos os direitos reservados."
+  }
+}
