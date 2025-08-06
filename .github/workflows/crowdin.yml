@@ -12,6 +12,10 @@ on:
   repository_dispatch:
     types: [crowdin_translation_ready]
 
+permissions:
+  contents: write # Required to push code
+  pull-requests: write # Required to open PRs
+
 jobs:
   ### ========== 1. UPLOAD JOB (only on push) ==========
   upload-to-crowdin:
@@ -82,7 +86,7 @@ jobs:
         env:
           CROWDIN_PROJECT_ID: "816438"
           CROWDIN_PERSONAL_TOKEN: "70f3fc562820d334fd7329abede970c98148dced4ed61a82866cee38b5a08271c282564c01f501ec"
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   ### ========== 3. AUTO-MERGE JOB ==========
   auto-merge-translations:
