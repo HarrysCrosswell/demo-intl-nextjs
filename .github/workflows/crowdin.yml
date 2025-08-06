@@ -1,42 +1,35 @@
 name: Crowdin Sync
 
+# 1. Trigger on push to main/master with en.json change
 on:
   push:
     branches: [main, master]
     paths:
       - "messages/en.json"
 
-  # Keep manual trigger option
-  workflow_dispatch:
-    inputs:
-      action_type:
-        description: "Action to perform"
-        required: true
-        default: "sync"
-        type: choice
-        options:
-          - sync
-          - download_only
-          - upload_only
+  # 2. Trigger on Crowdin webhook via repository_dispatch
+  # Requires: a webhook setup in Crowdin (see notes below)
+  repository_dispatch:
+    types: [crowdin_translation_ready]
 
 jobs:
-  crowdin-upload:
+  ### ========== 1. UPLOAD JOB (only on push) ==========
+  upload-to-crowdin:
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && (github.event.inputs.action_type == 'sync' || github.event.inputs.action_type == 'upload_only'))
 
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Get changed files
-        id: changed-files
+      - name: Detect changes in en.json
+        id: changes
         uses: tj-actions/changed-files@v40
         with:
-          files: |
-            messages/en.json
+          files: messages/en.json
 
-      - name: Upload sources to Crowdin
-        if: steps.changed-files.outputs.any_changed == 'true'
+      - name: Upload to Crowdin
+        if: steps.changes.outputs.any_changed == 'true'
         uses: crowdin/github-action@v1
         with:
           upload_sources: true
@@ -44,33 +37,22 @@ jobs:
           download_translations: false
         env:
           CROWDIN_PROJECT_ID: "816438"
-          # CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
-          # CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
           CROWDIN_PERSONAL_TOKEN: "70f3fc562820d334fd7329abede970c98148dced4ed61a82866cee38b5a08271c282564c01f501ec"
 
-      - name: Trigger auto-translation
-        if: steps.changed-files.outputs.any_changed == 'true'
-        run: |
-          echo "New source files uploaded to Crowdin"
-          echo "Changed files: ${{ steps.changed-files.outputs.all_changed_files }}"
+      - name: Notify
+        if: steps.changes.outputs.any_changed == 'true'
+        run: echo "Uploaded new sources to Crowdin"
 
-  crowdin-download:
+  ### ========== 2. DOWNLOAD JOB (only on webhook dispatch) ==========
+  download-from-crowdin:
+    if: github.event_name == 'repository_dispatch' && github.event.action == 'crowdin_translation_ready'
     runs-on: ubuntu-latest
-    needs: crowdin-upload
-    if: always() && (needs.crowdin-upload.result == 'success' || github.event.inputs.action_type == 'download_only')
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
-
-      - name: Wait for translations (if auto-translate enabled)
-        if: github.event_name == 'push'
-        run: |
-          echo "Waiting 30 seconds for auto-translation to complete..."
-          sleep 30
 
       - name: Download translations from Crowdin
         uses: crowdin/github-action@v1
@@ -81,76 +63,61 @@ jobs:
           create_pull_request: true
           pull_request_title: "🌍 Crowdin translations for commit ${{ github.sha }}"
           pull_request_body: |
-            ## 🌍 Automated Translation Update
+            ## 🌍 Crowdin Translation Update
 
-            **Triggered by:** Push to `${{ github.ref_name }}`
-            **Commit:** ${{ github.sha }}
+            **Triggered by:** Crowdin webhook
             **Author:** @${{ github.actor }}
 
-            ### 📁 Updated Translations
-            - 🇫🇷 French translations
-            - 🇪🇸 Spanish translations
-            - 🇸🇦 Arabic translations (RTL)
-
-            ### 🔧 Projects Updated
-            - Frontend: NextJS & Nuxt
-            - Backend: FastAPI & Spring Boot
-
-            ### ✅ Quality Checks
-            - Auto-translated with AI
-            - Consistency checks applied
-            - Format validation passed
-
-            **🚀 Ready to merge when CI passes!**
+            ### ✅ Status
+            - Translations auto-downloaded
+            - PR created for merge
 
             ---
-            *This PR was automatically created by Crowdin integration*
+            *This PR was automatically created by the Crowdin GitHub integration.*
           pull_request_labels: "translations,automated,i18n"
           pull_request_assignees: "${{ github.actor }}"
-          pull_request_base: "${{ github.ref_name }}"
+          pull_request_base: "main"
           localization_branch_name: "crowdin-translations-${{ github.run_number }}"
           commit_message: "feat(i18n): update translations from Crowdin [skip ci]"
         env:
           CROWDIN_PROJECT_ID: "816438"
-          # CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
           CROWDIN_PERSONAL_TOKEN: "70f3fc562820d334fd7329abede970c98148dced4ed61a82866cee38b5a08271c282564c01f501ec"
-          # CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
-  # Optional: Auto-merge if CI passes
+  ### ========== 3. AUTO-MERGE JOB ==========
   auto-merge-translations:
+    if: github.event_name == 'repository_dispatch' && github.event.action == 'crowdin_translation_ready'
+    needs: download-from-crowdin
     runs-on: ubuntu-latest
-    needs: crowdin-download
-    if: github.event_name == 'push' && needs.crowdin-download.result == 'success'
 
     steps:
-      - name: Wait for CI checks
+      - name: Wait and auto-merge if CI passes
         uses: actions/github-script@v7
         with:
           script: |
             const { owner, repo } = context.repo;
+            const prBranch = `crowdin-translations-${context.runNumber}`;
 
-            // Find the translation PR
             const prs = await github.rest.pulls.list({
               owner,
               repo,
               state: 'open',
-              head: `${owner}:crowdin-translations-${context.runNumber}`
+              head: `${owner}:${prBranch}`
             });
 
             if (prs.data.length === 0) {
-              console.log('No translation PR found');
+              console.log("No translation PR found.");
               return;
             }
 
             const pr = prs.data[0];
-            console.log(`Found translation PR #${pr.number}`);
+            console.log(`Found PR #${pr.number}. Waiting for CI...`);
 
-            // Wait for status checks (max 5 minutes)
-            let attempts = 0;
-            const maxAttempts = 30;
+            const maxWait = 10 * 60 * 1000; // 10 minutes
+            const pollInterval = 10000;
+            const maxAttempts = maxWait / pollInterval;
 
-            while (attempts < maxAttempts) {
+            for (let attempt = 0; attempt < maxAttempts; attempt++) {
               const checks = await github.rest.checks.listForRef({
                 owner,
                 repo,
@@ -163,43 +130,38 @@ jobs:
                 ref: pr.head.sha
               });
 
-              const allChecks = [
-                ...checks.data.check_runs,
-                ...statuses.data
-              ];
+              const all = [...checks.data.check_runs, ...statuses.data];
 
-              const pending = allChecks.filter(check =>
-                check.status === 'pending' || check.status === 'queued' || check.state === 'pending'
+              const failed = all.filter(c =>
+                c.conclusion === 'failure' || c.state === 'failure'
               );
-
-              const failed = allChecks.filter(check =>
-                check.conclusion === 'failure' || check.state === 'failure'
+              const pending = all.filter(c =>
+                c.status === 'in_progress' || c.status === 'queued' || c.state === 'pending'
               );
 
               if (failed.length > 0) {
-                console.log('CI checks failed, not auto-merging');
+                console.log("CI failed. Not merging.");
                 return;
               }
 
               if (pending.length === 0) {
-                console.log('All checks passed, auto-merging...');
+                console.log("All checks passed. Merging...");
 
                 await github.rest.pulls.merge({
                   owner,
                   repo,
                   pull_number: pr.number,
-                  merge_method: 'squash',
+                  merge_method: "squash",
                   commit_title: `feat(i18n): update translations from Crowdin (#${pr.number})`,
-                  commit_message: 'Auto-merged translation updates'
+                  commit_message: "Auto-merged translation updates"
                 });
 
-                console.log(`Successfully auto-merged PR #${pr.number}`);
+                console.log("PR merged!");
                 return;
               }
 
-              console.log(`Waiting for ${pending.length} checks to complete...`);
-              await new Promise(resolve => setTimeout(resolve, 10000)); // Wait 10 seconds
-              attempts++;
+              console.log(`Waiting for ${pending.length} checks...`);
+              await new Promise(r => setTimeout(r, pollInterval));
             }
 
-            console.log('Timeout waiting for checks, manual review required');
+            console.log("CI timeout. Manual review needed.");
