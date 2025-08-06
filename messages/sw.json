@@ -1,0 +1,55 @@
+{
+  "navigation": {
+    "home": "Nyumbani",
+    "team": "Our Team",
+    "pricing": "",
+    "contacts": "Anwani"
+  },
+  "home": {
+    "title": "Welcome to Our Company",
+    "subtitle": "We provide exceptional services and solutions to help your business grow and succeed in today's competitive market.",
+    "cta": "Kupata Kuanza",
+    "motto": "Code once, run everywhere",
+    "testimonies": "Some testimonies...",
+    "partners": "Our partners..."
+  },
+  "team": {
+    "title": "Our Team",
+    "ceo": "CEO & Founder",
+    "cto": "CTO",
+    "lead": "Lead Developer"
+  },
+  "pricing": {
+    "title": "Pricing Plans",
+    "basic": "Msingi",
+    "pro": "Pro",
+    "enterprise": "Enterprise",
+    "month": "/month",
+    "choose": "Choose Plan",
+    "features": {
+      "projects": "{count} Projects",
+      "basicSupport": "Basic Support",
+      "prioritySupport": "Kipaumbele Support",
+      "support247": "24/7 Support",
+      "storage": "{amount} Storage",
+      "advanced": "Advanced Features",
+      "unlimited": "Unlimited Projects",
+      "custom": "Custom Integration"
+    }
+  },
+  "contact": {
+    "title": "Wasiliana nasi",
+    "email": "Email",
+    "message": "Meseji",
+    "send": "Send",
+    "success": "Ujumbe umetumwa kwa mafanikio!",
+    "emailPlaceholder": "barua pepe yako",
+    "messagePlaceholder": "Your message here..."
+  },
+  "footer": {
+    "description": "Building exceptional digital experiences for businesses worldwide.",
+    "quickLinks": "Viungo vya haraka",
+    "followUs": "Follow Us",
+    "copyright": "© 2024 Your Company Name. All rights reserved."
+  }
+}

@@ -9,7 +9,9 @@
     "title": "欢迎来到我们的公司",
     "subtitle": "我们提供不同寻常的服务和解决办法，帮助您的企业在当今竞争性市场上成长并取得成功。",
     "cta": "开始",
-    "motto": "代码一次，随时随地运行"
+    "motto": "代码一次，随时随地运行",
+    "testimonies": "一些证词...",
+    "partners": "我们的伙伴..."
   },
   "team": {
     "title": "我们的团队",
@@ -25,11 +27,11 @@
     "month": "/月",
     "choose": "选择计划",
     "features": {
-      "projects": "{count} Projects",
+      "projects": "{count} 個項目",
       "basicSupport": "基本支持",
       "prioritySupport": "优先级支持",
       "support247": "24/7 支持",
-      "storage": "{amount} Storage",
+      "storage": "{amount} 儲存",
       "advanced": "高级功能",
       "unlimited": "无限项目",
       "custom": "自定义集成"
