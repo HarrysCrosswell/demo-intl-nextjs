@@ -3,7 +3,8 @@
     "home": "Zurück",
     "team": "Unser Team",
     "pricing": "Preisgestaltung",
-    "contacts": "Kontakte"
+    "contacts": "Kontakte",
+    "userSearch": "Benutzer-Suche"
   },
   "home": {
     "title": "Willkommen bei unserem Unternehmen",
@@ -51,5 +52,25 @@
     "quickLinks": "Schnelllinks",
     "followUs": "Folgen Sie uns",
     "copyright": "©️ 2024 Ihr Firmenname. Alle Rechte vorbehalten."
+  },
+  "userSearch": {
+    "title": "Benutzer-Suche",
+    "subtitle": "Suche nach Benutzern in unserer Datenbank",
+    "userIdLabel": "Benutzer-ID",
+    "userIdPlaceholder": "Benutzer-ID eingeben (z. B. 1, 2, 3)",
+    "searchButton": "Benutzer suchen",
+    "loading": "Suche...",
+    "userNotFound": "Benutzer nicht gefunden",
+    "errorOccurred": "Fehler bei der Suche",
+    "userIdRequired": "Benutzer-ID ist erforderlich",
+    "userCard": {
+      "title": "Benutzerinformationen",
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "age": "Alter",
+      "birthDate": "Geburtsdatum",
+      "createdAt": "Erstellt am",
+      "yearsOld": "Jahre alt"
+    }
   }
 }
