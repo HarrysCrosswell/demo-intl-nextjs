@@ -3,7 +3,8 @@
     "home": "首页",
     "team": "我们的团队",
     "pricing": "定价",
-    "contacts": "联系人"
+    "contacts": "联系人",
+    "userSearch": "用户搜索"
   },
   "home": {
     "title": "欢迎来到我们的公司",
@@ -51,5 +52,25 @@
     "quickLinks": "快速链接",
     "followUs": "关注我们",
     "copyright": "©️ 2024 您的公司名称。版权所有。"
+  },
+  "userSearch": {
+    "title": "用户搜索",
+    "subtitle": "在我们的数据库中搜索用户",
+    "userIdLabel": "用户 ID",
+    "userIdPlaceholder": "输入用户 ID (例如，1, 2, 3)",
+    "searchButton": "搜索用户",
+    "loading": "搜索中...",
+    "userNotFound": "找不到用户",
+    "errorOccurred": "搜索时出错",
+    "userIdRequired": "必须填写用户 ID",
+    "userCard": {
+      "title": "用户信息",
+      "firstName": "名字",
+      "lastName": "名字",
+      "age": "年龄",
+      "birthDate": "出生日期",
+      "createdAt": "创建于",
+      "yearsOld": "年份"
+    }
   }
 }
