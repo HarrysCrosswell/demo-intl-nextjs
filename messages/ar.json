@@ -3,7 +3,8 @@
     "home": "المنزل",
     "team": "فريقنا",
     "pricing": "التسعير",
-    "contacts": "جهات"
+    "contacts": "جهات",
+    "userSearch": "بحث المستخدم"
   },
   "home": {
     "title": "مرحبا بكم في شركتنا",
@@ -51,5 +52,25 @@
     "quickLinks": "روابط سريعة",
     "followUs": "تابعنا",
     "copyright": "©️ 2024 اسم شركتك. جميع الحقوق محفوظة."
+  },
+  "userSearch": {
+    "title": "بحث المستخدم",
+    "subtitle": "البحث عن المستخدمين في قاعدة بياناتنا",
+    "userIdLabel": "معرف المستخدم",
+    "userIdPlaceholder": "أدخل معرف المستخدم (على سبيل المثال، 1، 2، 3)",
+    "searchButton": "البحث عن مستخدم",
+    "loading": "يبحث...",
+    "userNotFound": "المستخدم غير موجود",
+    "errorOccurred": "حدث خطأ أثناء البحث",
+    "userIdRequired": "معرف المستخدم مطلوب",
+    "userCard": {
+      "title": "معلومات المستخدم",
+      "firstName": "الاسم الأول",
+      "lastName": "اسم العائلة",
+      "age": "العمر",
+      "birthDate": "تاريخ الميلاد",
+      "createdAt": "تم إنشاؤها في",
+      "yearsOld": "سنوات من العمر"
+    }
   }
 }
