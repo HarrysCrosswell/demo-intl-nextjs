@@ -3,7 +3,8 @@
     "home": "Nyumbani",
     "team": "Our Team",
     "pricing": "",
-    "contacts": "Anwani"
+    "contacts": "Anwani",
+    "userSearch": "User Search"
   },
   "home": {
     "title": "Welcome to Our Company",
@@ -51,5 +52,25 @@
     "quickLinks": "Viungo vya haraka",
     "followUs": "Follow Us",
     "copyright": "© 2024 Your Company Name. All rights reserved."
+  },
+  "userSearch": {
+    "title": "User Search",
+    "subtitle": "Search for users in our database",
+    "userIdLabel": "User ID",
+    "userIdPlaceholder": "Enter user ID (e.g., 1, 2, 3)",
+    "searchButton": "Search User",
+    "loading": "Searching...",
+    "userNotFound": "User not found",
+    "errorOccurred": "An error occurred while searching",
+    "userIdRequired": "User ID is required",
+    "userCard": {
+      "title": "User Information",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "age": "Age",
+      "birthDate": "Birth Date",
+      "createdAt": "Created At",
+      "yearsOld": "years old"
+    }
   }
 }
