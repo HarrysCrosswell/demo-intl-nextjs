@@ -54,6 +54,12 @@ export default function Navigation({ onMenuClick }: NavigationProps) {
               >
                 {t("contacts")}
               </button>
+              <button
+                onClick={() => onMenuClick("user-search")}
+                className="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+              >
+                {t("navigation.userSearch")}
+              </button>
             </div>
 
             {/* Language Switcher */}

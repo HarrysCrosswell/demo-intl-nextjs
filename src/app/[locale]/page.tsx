@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import Navigation from "../../components/Navigation";
+import UserSearch from "../../components/UserSearch";
 
 export default function Home() {
   const t = useTranslations();
@@ -165,6 +166,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* User Search Section */}
+        <UserSearch />
 
         {/* Contacts Section */}
         <section id="contacts" className="py-20 bg-white">
