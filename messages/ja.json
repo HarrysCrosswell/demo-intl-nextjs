@@ -3,7 +3,8 @@
     "home": "ホーム",
     "team": "私たちのチーム",
     "pricing": "価格",
-    "contacts": "連絡先"
+    "contacts": "連絡先",
+    "userSearch": "ユーザー検索"
   },
   "home": {
     "title": "当社へようこそ",
@@ -51,5 +52,25 @@
     "quickLinks": "クイックリンク",
     "followUs": "フォローしてください",
     "copyright": "©️ 2024 Your Company Name. All rights reserved."
+  },
+  "userSearch": {
+    "title": "ユーザー検索",
+    "subtitle": "データベース内のユーザーを検索",
+    "userIdLabel": "ユーザー ID",
+    "userIdPlaceholder": "ユーザーIDを入力してください(例: 1, 2, 3)",
+    "searchButton": "ユーザーを検索",
+    "loading": "検索中...",
+    "userNotFound": "ユーザーが見つかりません",
+    "errorOccurred": "検索中にエラーが発生",
+    "userIdRequired": "ユーザー ID が必要です",
+    "userCard": {
+      "title": "ユーザー情報",
+      "firstName": "名",
+      "lastName": "姓",
+      "age": "年齢",
+      "birthDate": "誕生日",
+      "createdAt": "作成日時",
+      "yearsOld": "歳"
+    }
   }
 }
