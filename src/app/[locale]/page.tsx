@@ -5,9 +5,13 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import Navigation from "../../components/Navigation";
 import UserSearch from "../../components/UserSearch";
+import CulturalShowcase from "../../components/CulturalShowcase";
+import CulturalDemo from "../../components/CulturalDemo";
+import { useCultural } from "../../contexts/CulturalContext";
 
 export default function Home() {
   const t = useTranslations();
+  const { currentTheme, formatCurrency } = useCultural();
   const [formData, setFormData] = useState({
     email: "",
     message: "",
@@ -36,7 +40,10 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div
+      className="min-h-screen bg-white"
+      style={{ direction: currentTheme.preferences.layoutDirection }}
+    >
       {/* Navigation with Language Switcher */}
       <Navigation onMenuClick={scrollToSection} />
 
@@ -56,12 +63,18 @@ export default function Home() {
             </p>
             <button
               onClick={() => scrollToSection("contacts")}
-              className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
+              className="bg-cultural-primary text-white px-8 py-3 rounded-lg font-medium hover:opacity-90 transition-all"
             >
               {t("home.cta")}
             </button>
           </div>
         </section>
+
+        {/* Cultural Demo Section */}
+        {/* <CulturalDemo /> */}
+
+        {/* Cultural Showcase Section */}
+        {/* <CulturalShowcase /> */}
 
         {/* Our Team Section */}
         <section id="team" className="py-20 bg-white">
@@ -95,7 +108,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Pricing Section */}
+        {/* Pricing Section with Cultural Colors */}
         <section id="pricing" className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
@@ -106,8 +119,8 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   {t("pricing.basic")}
                 </h3>
-                <p className="text-4xl font-bold text-blue-600 mb-6">
-                  $29
+                <p className="text-4xl font-bold text-cultural-primary mb-6">
+                  {formatCurrency(29, "$")}
                   <span className="text-lg text-gray-500">
                     {t("pricing.month")}
                   </span>
@@ -117,16 +130,17 @@ export default function Home() {
                   <li>✓ {t("pricing.features.basicSupport")}</li>
                   <li>✓ {t("pricing.features.storage", { amount: "10GB" })}</li>
                 </ul>
-                <button className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                <button className="w-full bg-cultural-primary text-white py-2 rounded-lg hover:opacity-90 transition-all">
                   {t("pricing.choose")}
                 </button>
               </div>
-              <div className="bg-white p-8 rounded-lg shadow-md border-2 border-blue-600">
+
+              <div className="bg-white p-8 rounded-lg shadow-md border-2 border-cultural-primary">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   {t("pricing.pro")}
                 </h3>
-                <p className="text-4xl font-bold text-blue-600 mb-6">
-                  $59
+                <p className="text-4xl font-bold text-cultural-primary mb-6">
+                  {formatCurrency(59, "$")}
                   <span className="text-lg text-gray-500">
                     {t("pricing.month")}
                   </span>
@@ -137,16 +151,17 @@ export default function Home() {
                   <li>✓ {t("pricing.features.storage", { amount: "50GB" })}</li>
                   <li>✓ {t("pricing.features.advanced")}</li>
                 </ul>
-                <button className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                <button className="w-full bg-cultural-primary text-white py-2 rounded-lg hover:opacity-90 transition-all">
                   {t("pricing.choose")}
                 </button>
               </div>
+
               <div className="bg-white p-8 rounded-lg shadow-md">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   {t("pricing.enterprise")}
                 </h3>
-                <p className="text-4xl font-bold text-blue-600 mb-6">
-                  $99
+                <p className="text-4xl font-bold text-cultural-primary mb-6">
+                  {formatCurrency(99, "$")}
                   <span className="text-lg text-gray-500">
                     {t("pricing.month")}
                   </span>
@@ -159,7 +174,7 @@ export default function Home() {
                   </li>
                   <li>✓ {t("pricing.features.custom")}</li>
                 </ul>
-                <button className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                <button className="w-full bg-cultural-primary text-white py-2 rounded-lg hover:opacity-90 transition-all">
                   {t("pricing.choose")}
                 </button>
               </div>
@@ -170,7 +185,7 @@ export default function Home() {
         {/* User Search Section */}
         <UserSearch />
 
-        {/* Contacts Section */}
+        {/* Contacts Section with Cultural Styling */}
         <section id="contacts" className="py-20 bg-white">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
@@ -191,7 +206,7 @@ export default function Home() {
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cultural-primary focus:border-transparent"
                   placeholder={t("contact.emailPlaceholder")}
                 />
               </div>
@@ -209,13 +224,13 @@ export default function Home() {
                   onChange={handleInputChange}
                   required
                   rows={4}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cultural-primary focus:border-transparent"
                   placeholder={t("contact.messagePlaceholder")}
                 />
               </div>
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
+                className="w-full bg-cultural-primary text-white py-3 rounded-lg font-medium hover:opacity-90 transition-all"
               >
                 {t("contact.send")}
               </button>
@@ -224,7 +239,7 @@ export default function Home() {
         </section>
       </main>
 
-      {/* Footer */}
+      {/* Footer with Cultural Styling */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -246,7 +261,7 @@ export default function Home() {
                 <li>
                   <button
                     onClick={() => scrollToSection("home")}
-                    className="hover:text-white"
+                    className="hover:text-cultural-primary transition-colors"
                   >
                     {t("navigation.home")}
                   </button>
@@ -254,7 +269,7 @@ export default function Home() {
                 <li>
                   <button
                     onClick={() => scrollToSection("team")}
-                    className="hover:text-white"
+                    className="hover:text-cultural-primary transition-colors"
                   >
                     {t("navigation.team")}
                   </button>
@@ -262,7 +277,7 @@ export default function Home() {
                 <li>
                   <button
                     onClick={() => scrollToSection("pricing")}
-                    className="hover:text-white"
+                    className="hover:text-cultural-primary transition-colors"
                   >
                     {t("navigation.pricing")}
                   </button>
@@ -270,7 +285,7 @@ export default function Home() {
                 <li>
                   <button
                     onClick={() => scrollToSection("contacts")}
-                    className="hover:text-white"
+                    className="hover:text-cultural-primary transition-colors"
                   >
                     {t("navigation.contacts")}
                   </button>
@@ -282,14 +297,29 @@ export default function Home() {
                 {t("footer.followUs")}
               </h3>
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-cultural-primary transition-colors"
+                >
                   Twitter
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-cultural-primary transition-colors"
+                >
                   LinkedIn
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-cultural-primary transition-colors"
+                >
                   GitHub
+                </a>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-cultural-primary transition-colors"
+                >
+                  {t("footer.contactMe")}
                 </a>
               </div>
             </div>

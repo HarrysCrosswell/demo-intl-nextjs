@@ -2,6 +2,8 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { CulturalProvider } from "@/contexts/CulturalContext";
+import { culturalThemes, defaultCulturalTheme } from "@/i18n/cultural-themes";
 import "../globals.css";
 
 export default async function LocaleLayout({
@@ -22,16 +24,21 @@ export default async function LocaleLayout({
   // Providing all messages to the client side
   const messages = await getMessages();
   const isRTL = locale === "ar";
+  const culturalTheme = culturalThemes[locale] || defaultCulturalTheme;
 
   return (
-    <html lang={locale} dir={isRTL ? "rtl" : "ltr"}>
+    <html
+      lang={locale}
+      dir={isRTL ? "rtl" : "ltr"}
+      data-cultural-theme={locale}
+    >
       <head>
         <title>Multilingual App</title>
         <meta name="description" content="A multilingual NextJS application" />
       </head>
       <body className={isRTL ? "rtl" : "ltr"}>
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <CulturalProvider>{children}</CulturalProvider>
         </NextIntlClientProvider>
       </body>
     </html>

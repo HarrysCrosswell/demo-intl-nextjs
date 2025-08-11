@@ -9,7 +9,7 @@ export const userApi = {
       headers: {
         Accept: "application/json",
         "Accept-Language": locale,
-        "Content-Type": "application/json",
+        //"Content-Type": "application/json",
       },
     });
 
@@ -21,6 +21,8 @@ export const userApi = {
         detail: data.detail || data.message || "An error occurred",
       };
     }
+
+    console.log("FOUND USER: ", data);
 
     return data;
   },

@@ -3,7 +3,7 @@ name: Crowdin Sync
 # 1. Trigger on push to main/master with en.json change
 on:
   push:
-    branches: [main, master]
+    branches: [main]
     paths:
       - "messages/en.json"
 

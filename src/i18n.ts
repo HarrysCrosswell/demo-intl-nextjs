@@ -8,7 +8,7 @@ const locales = [
   { code: "de", name: "Deutsch", flag: "🇩🇪" },
   { code: "it", name: "Italiano", flag: "🇮🇹" },
   { code: "ja", name: "日本語", flag: "🇯🇵" },
-  { code: "sw", name: "Swahili", flag: "🇸🇼" },
+  { code: "sw", name: "Swahili", flag: "🇰🇪" },
 ];
 
 export default locales;

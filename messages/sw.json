@@ -1,76 +1,76 @@
 {
   "navigation": {
     "home": "Nyumbani",
-    "team": "Our Team",
-    "pricing": "",
-    "contacts": "Anwani",
-    "userSearch": "User Search"
+    "team": "Timu Yetu",
+    "pricing": "Bei",
+    "contacts": "Mawasiliano",
+    "userSearch": "Utafutaji wa Mtumiaji"
   },
   "home": {
-    "title": "Welcome to Our Company",
-    "subtitle": "We provide exceptional services and solutions to help your business grow and succeed in today's competitive market.",
-    "cta": "Kupata Kuanza",
-    "motto": "Code once, run everywhere",
-    "testimonies": "Some testimonies...",
-    "partners": "Our partners..."
+    "title": "Karibu Kampuni Yetu",
+    "subtitle": "Tunatoa huduma na suluhisho za kipekee ili kusaidia biashara yako kukua na kufanikiwa katika soko la ushindani la leo.",
+    "cta": "Anza Sasa",
+    "motto": "Andika mara moja, tumia mahali popote",
+    "testimonies": "Baadhi ya ushahidi...",
+    "partners": "Washirika wetu..."
   },
   "team": {
-    "title": "Our Team",
-    "ceo": "CEO & Founder",
-    "cto": "CTO",
-    "lead": "Lead Developer"
+    "title": "Timu Yetu",
+    "ceo": "Mkurugenzi Mkuu na Mwanzilishi",
+    "cto": "Mkurugenzi wa Teknolojia",
+    "lead": "Msanidi Programu Mkuu"
   },
   "pricing": {
-    "title": "Pricing Plans",
+    "title": "Mipango ya Bei",
     "basic": "Msingi",
-    "pro": "Pro",
-    "enterprise": "Enterprise",
-    "month": "/month",
-    "choose": "Choose Plan",
+    "pro": "Mtaalamu",
+    "enterprise": "Shirika",
+    "month": "/mwezi",
+    "choose": "Chagua Mpango",
     "features": {
-      "projects": "{count} Projects",
-      "basicSupport": "Basic Support",
-      "prioritySupport": "Kipaumbele Support",
-      "support247": "24/7 Support",
-      "storage": "{amount} Storage",
-      "advanced": "Advanced Features",
-      "unlimited": "Unlimited Projects",
-      "custom": "Custom Integration"
+      "projects": "Miradi {count}",
+      "basicSupport": "Msaada wa Msingi",
+      "prioritySupport": "Msaada wa Kipaumbele",
+      "support247": "Msaada wa Saa 24/7",
+      "storage": "Hifadhi ya {amount}",
+      "advanced": "Vipengele vya Hali ya Juu",
+      "unlimited": "Miradi Isiyo na Kikomo",
+      "custom": "Uunganishaji wa Kawaida"
     }
   },
   "contact": {
-    "title": "Wasiliana nasi",
-    "email": "Email",
-    "message": "Meseji",
-    "send": "Send",
+    "title": "Wasiliana Nasi",
+    "email": "Barua Pepe",
+    "message": "Ujumbe",
+    "send": "Tuma",
     "success": "Ujumbe umetumwa kwa mafanikio!",
     "emailPlaceholder": "barua pepe yako",
-    "messagePlaceholder": "Your message here..."
+    "messagePlaceholder": "Ujumbe wako hapa..."
   },
   "footer": {
-    "description": "Building exceptional digital experiences for businesses worldwide.",
-    "quickLinks": "Viungo vya haraka",
-    "followUs": "Follow Us",
-    "copyright": "© 2024 Your Company Name. All rights reserved."
+    "description": "Kujenga uzoefu wa kidijitali wa kipekee kwa biashara duniani kote.",
+    "quickLinks": "Viungo vya Haraka",
+    "followUs": "Tufuate",
+    "copyright": "© 2024 Jina la Kampuni Yako. Haki zote zimehifadhiwa."
   },
   "userSearch": {
-    "title": "User Search",
-    "subtitle": "Search for users in our database",
-    "userIdLabel": "User ID",
-    "userIdPlaceholder": "Enter user ID (e.g., 1, 2, 3)",
-    "searchButton": "Search User",
-    "loading": "Searching...",
-    "userNotFound": "User not found",
-    "errorOccurred": "An error occurred while searching",
-    "userIdRequired": "User ID is required",
+    "title": "Utafutaji wa Mtumiaji",
+    "subtitle": "Tafuta watumiaji katika hifadhidata yetu",
+    "userIdLabel": "Kitambulisho cha Mtumiaji",
+    "userIdPlaceholder": "Ingiza kitambulisho cha mtumiaji (mfano, 1, 2, 3)",
+    "searchButton": "Tafuta Mtumiaji",
+    "loading": "Inatafuta...",
+    "userNotFound": "Mtumiaji hajapatikana",
+    "errorOccurred": "Hitilafu imetokea wakati wa kutafuta",
+    "userIdRequired": "Kitambulisho cha mtumiaji kinahitajika",
     "userCard": {
-      "title": "User Information",
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "age": "Age",
-      "birthDate": "Birth Date",
-      "createdAt": "Created At",
-      "yearsOld": "years old"
+      "title": "Taarifa za Mtumiaji",
+      "firstName": "Jina la Kwanza",
+      "lastName": "Jina la Mwisho",
+      "age": "Umri",
+      "birthDate": "Tarehe ya Kuzaliwa",
+      "createdAt": "Iliundwa",
+      "yearsOld": "miaka"
     }
   }
 }
